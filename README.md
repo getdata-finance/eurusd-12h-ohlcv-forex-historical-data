@@ -1,10 +1,10 @@
 # EURUSD 12h OHLCV Forex Historical Data — Free Sample
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-2_526_rows-blue)](https://getdata.finance/datasets/eurusd) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/eurusd)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-14_119_rows-blue)](https://getdata.finance/datasets/eurusd) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/eurusd)
 
 ### -> [**Download the full EURUSD dataset on getdata.finance**](https://getdata.finance/datasets/eurusd)
 
-**EURUSD 12h OHLCV forex historical data** — ultra high-quality 12h OHLCV for **Euro / US Dollar**. 24/5 market coverage — Asia, Europe and US sessions with institutional-style FX candles. Clean `datetime, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
+**EURUSD 12h OHLCV forex historical data** — ultra high-quality 12h OHLCV for **Euro / US Dollar**. Clean `time, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
 
 ## Table of contents
 
@@ -22,13 +22,12 @@
 ## Why this dataset?
 
 - **Ultra high-quality 12h OHLCV** for **Euro / US Dollar** (Forex)
-- **24/5 market coverage — Asia, Europe and US sessions with institutional-style FX candles**
-- **Clean CSV schema** — `datetime, open, high, low, close, volume` (no gaps in formatting)
-- **Free evaluation sample** on GitHub (`12h`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/eurusd) · **2,526** `1m` rows in the full archive
+- **Clean CSV schema** — `time, open, high, low, close, volume` (no gaps in formatting)
+- **Free evaluation sample** on GitHub (`12h`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/eurusd) · **14,119** `12h` rows in the full archive
 - Built for **backtesting**, **algorithmic trading** and **quantitative finance** workflows
 - **Weekly refresh** — [getdata.finance](https://getdata.finance) every **Saturday, 8am UTC+0**; GitHub `12h` sample updated in sync
 
-> **Sample on GitHub** · `EURUSD_12h.csv` (571 rows, `2025-07-31` -> `2026-07-31`). **Full archive on [getdata.finance](https://getdata.finance/datasets/eurusd)** — **2,526** `1m` rows (~0.25 MB), **11 timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W), `2022-02-27` -> `2026-07-31`.
+> **Sample on GitHub** · `EURUSD_12h.csv` (85 rows, `2026-07-10` -> `2026-09-02`, 5.50 KB). **Full archive on [getdata.finance](https://getdata.finance/datasets/eurusd)** — **14,119** `12h` rows (full `1m`: 1,685,501), **11 timeframes**, `2001-11-28` -> `2026-09-02`.
 
 ## Download sample
 
@@ -46,9 +45,9 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 |---|--:|---|
 | Instrument | Euro / US Dollar · Forex | Euro / US Dollar · Forex |
 | Timeframes | `12h` (sample) | **11** — 1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W |
-| 1m rows | 571 | **2,526** |
-| Size | 0.06 MB | ~0.25 MB |
-| Period | `2025-07-31` -> `2026-07-31` | `2022-02-27` -> `2026-07-31` |
+| 12h rows | 85 | **14,119** |
+| Size | 5.50 KB | full ZIP on [getdata.finance](https://getdata.finance/datasets/eurusd) |
+| Period | `2026-07-10` -> `2026-09-02` | `2001-11-28` -> `2026-09-02` |
 | File | `EURUSD_12h.csv` | ZIP on [getdata.finance](https://getdata.finance/datasets/eurusd) |
 | Coverage report | — | [EURUSD coverage](https://getdata.finance/coverage/eurusd) |
 | Updates | Weekly (Saturday, 8am UTC+0) — GitHub sample | Weekly (Saturday, 8am UTC+0) — all timeframes |
@@ -57,7 +56,7 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 This GitHub repository ships a **`12h` evaluation sample** only. On **[getdata.finance](https://getdata.finance/datasets/eurusd)**, each full asset archive is delivered as a ZIP with **11 gap-free OHLCV timeframes** (one CSV per timeframe):
 
-**1m** · **3m** · **5m** · **15m** · **30m** · **1H** · **4H** · **12H** · **1D** · **3D** · **1W**
+**1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W**
 
 GitHub = `12h` sample · [getdata.finance](https://getdata.finance/datasets/eurusd) = all **11** timeframes above for the same instrument.
 
@@ -74,29 +73,29 @@ First and latest rows from the GitHub sample **`EURUSD_12h.csv`**:
 
 **First rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2025-07-31T12:00:00+00:00 | 1.14423 | 1.14443 | 1.1399 | 1.14157 | 140281.8757896224 |
-| 2025-08-01T00:00:00+00:00 | 1.14157 | 1.14315 | 1.13867 | 1.13981 | 105580 |
-| 2025-08-01T12:00:00+00:00 | 1.13981 | 1.15905 | 1.1385 | 1.15789 | 315281 |
-| 2025-08-03T12:00:00+00:00 | 1.15789 | 1.15864 | 1.15679 | 1.15774 | 14618.8081673332 |
-| 2025-08-04T00:00:00+00:00 | 1.15774 | 1.15786 | 1.15393 | 1.15567 | 143350 |
+| 2026-07-10T00:00:00+00:00 | 1.14401 | 1.14608 | 1.14232 | 1.14291 | 85159 |
+| 2026-07-10T12:00:00+00:00 | 1.14291 | 1.14412 | 1.14114 | 1.14147 | 60143 |
+| 2026-07-12T12:00:00+00:00 | 1.13995 | 1.14053 | 1.13883 | 1.13953 | 16787 |
+| 2026-07-13T00:00:00+00:00 | 1.13953 | 1.14458 | 1.13842 | 1.14307 | 102316 |
+| 2026-07-13T12:00:00+00:00 | 1.14307 | 1.14332 | 1.13775 | 1.13847 | 91760 |
 
 **Last rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2026-07-29T12:00:00+00:00 | 1.15047 | 1.15973 | 1.14972 | 1.15893 | 115854.6290188634 |
-| 2026-07-30T00:00:00+00:00 | 1.15893 | 1.16056 | 1.15567 | 1.15973 | 76194 |
-| 2026-07-30T12:00:00+00:00 | 1.15973 | 1.16584 | 1.15908 | 1.16445 | 124721.1803573471 |
-| 2026-07-31T00:00:00+00:00 | 1.16445 | 1.1648 | 1.16063 | 1.16068 | 91175 |
-| 2026-07-31T12:00:00+00:00 | 1.16068 | 1.16688 | 1.15768 | 1.16492 | 115688 |
+| 2026-08-31T00:00:00+00:00 | 1.15923 | 1.16059 | 1.15846 | 1.15951 | 72715 |
+| 2026-08-31T12:00:00+00:00 | 1.15951 | 1.16243 | 1.15937 | 1.1618 | 60082 |
+| 2026-09-01T00:00:00+00:00 | 1.1618 | 1.16187 | 1.15879 | 1.15931 | 69151 |
+| 2026-09-01T12:00:00+00:00 | 1.15931 | 1.16081 | 1.15832 | 1.15832 | 60507 |
+| 2026-09-02T00:00:00+00:00 | 1.15832 | 1.15842 | 1.15768 | 1.15781 | 5532 |
 
 ## Schema
 
 | Column | Description |
 | --- | --- |
-| `datetime` | Bar open timestamp (UTC, ISO-8601). |
+| `time` | Bar open timestamp (UTC, ISO-8601). |
 | `open` | Opening price of the candlestick bar. |
 | `high` | Highest price during the bar. |
 | `low` | Lowest price during the bar. |
@@ -104,7 +103,7 @@ First and latest rows from the GitHub sample **`EURUSD_12h.csv`**:
 | `volume` | Tick volume (number of price updates) during the bar. |
 
 ```text
-datetime,open,high,low,close,volume
+time,open,high,low,close,volume
 ```
 
 ## Code examples
@@ -114,11 +113,9 @@ datetime,open,high,low,close,volume
 ```python
 import pandas as pd
 
-df = pd.read_csv('EURUSD_12h.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('EURUSD_12h.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 print(df.describe())
-print(df.resample('1h').agg({'open': 'first', 'high': 'max',
-                              'low': 'min', 'close': 'last', 'volume': 'sum'}).head())
 ```
 
 ### backtrader
@@ -127,8 +124,8 @@ print(df.resample('1h').agg({'open': 'first', 'high': 'max',
 import backtrader as bt
 import pandas as pd
 
-df = pd.read_csv('EURUSD_12h.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('EURUSD_12h.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 
 class PandasData(bt.feeds.PandasData):
     params = (('datetime', None), ('open', 'open'), ('high', 'high'),
@@ -146,20 +143,20 @@ cerebro.adddata(PandasData(dataname=df))
 import pandas as pd
 import vectorbt as vbt
 
-df = pd.read_csv('EURUSD_12h.csv', parse_dates=['datetime'])
-close = df.set_index('datetime')['close']
+df = pd.read_csv('EURUSD_12h.csv', parse_dates=['time'])
+close = df.set_index('time')['close']
 fast, slow = vbt.MA.run(close, 10), vbt.MA.run(close, 50)
 entries = fast.ma_crossed_above(slow)
 exits = fast.ma_crossed_below(slow)
-pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='1min')
+pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='12h')
 print(pf.stats())
 ```
 
 ## Download full data
 
-The complete **EURUSD** archive on **[getdata.finance](https://getdata.finance/datasets/eurusd)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **2,526** rows at `1m`, plus all other timeframes in the same ZIP.
+The complete **EURUSD** archive on **[getdata.finance](https://getdata.finance/datasets/eurusd)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **14,119** rows at `12h`, plus all other timeframes in the same ZIP.
 
 **[-> Get the full EURUSD dataset on getdata.finance](https://getdata.finance/datasets/eurusd)**
 
 ---
-*GetData · EURUSD 12h OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/eurusd) · 2026-08-05 UTC*
+*GetData · EURUSD 12h OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/eurusd)*
